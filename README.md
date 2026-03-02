@@ -5,7 +5,13 @@ An AO3 Work Skin for idol messaging system Plus Chat (adaptable for other messag
 
 <details>
 	<summary></summary>
-	{insert previews here}
+	<p align="center">
+		<img src="previews/green-video.png" alt="green background with idolmessagevideo demo" height="500"/>
+		<img src="previews/yellow-memo.png" alt="yellow background with totalmemo demo" height="500"/>
+		<img src="previews/red-photo.png" alt="red background with idolmessagephoto demo" height="500"/>
+		<img src="previews/blue-livestream.png" alt="blue background with idolmessagelive demo" height="500"/>
+		<img src="previews/purple-sticker.png" alt="purple background with idolmessagesticker demo" height="500"/>
+	</p>
 </details>
 
 ## Rules of Usage
