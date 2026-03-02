@@ -1,5 +1,5 @@
 # Archive of Our Own - Plus Chat Work Skin
-An AO3 Work Skin for idol messaging system Plus Chat (adaptable for other messaging systems) using CSS and HTML. 
+An AO3 Work Skin for idol messaging system Plus Chat (adaptable for other messaging systems) using CSS and HTML. Available [here](https://archiveofourown.org/works/80519981) on AO3.
 
 ## Previews
 
@@ -20,8 +20,8 @@ This work skin is free to use for everybody, and free to take and adjust as you 
 
 If you use it OR work off of it to make something on your own, I ask that you please credit me by either of these means:
 
-1. Linking the GitHub or AO3 page for this workskin, with credit
-2. Using the 'This work is a remix, a translation, a podfic, or was inspired by another work' option on AO3
+1. Linking the GitHub or [AO3 page](https://archiveofourown.org/works/80519981) for this workskin, with credit
+2. Using the 'This work is a remix, a translation, a podfic, or was inspired by another work' option on AO3 using [this work](https://archiveofourown.org/works/80519981).
 
 Thank you for your kindness and understanding!
 
@@ -167,7 +167,7 @@ This is also a photo, but slightly smaller and the background should be transpar
 
 ## Closing
 
-I believe that is all of the info I have to give you, although I am readily available to contact on [twitter](https://x.com/neulbubble), and will even turn on public dms for a week or two in case you want to ask me about something (scary) (anything for you guys). You can also reach me by commenting on the AO3 work for this skin!
+I believe that is all of the info I have to give you, although I am available to contact on [twitter](https://x.com/neulbubble), and will even turn on public dms for a week or two in case you want to ask me about something (scary) (anything for you guys). You can also reach me by commenting on the AO3 work for this skin!
 
 Please do not hesitate to reach out with questions/concerns/bugs! I am not always immediately available but I will be sure to get back to everyone as soon as possible :D
 
