@@ -279,12 +279,12 @@ i personally use https: //images.squidge.org but anything works):
 /* IDOL ELEMENTS SUBSECTION: VOICE MEMOS */
 
 /* overall container for the voice memo so we can have two separate bubbles (one for memo, one for expand button) */
-#workskin .totalmemo {
+#workskin .idolmessagevoicememo {
 	display: flex;
 }
 
 /* bubble for the memo section */
-#workskin .idolmessagevoicememo {
+#workskin .totalmemo {
 	display: flex;
 	align-items: center;
 	max-width: 65%;
