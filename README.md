@@ -79,7 +79,7 @@ The structure hierarchy is as follows:
 	│   │       │ 
 	│   │       ├── idolmessage
 	│   │       ├── idolmessagelive
-	│   │       ├── totalmemo
+	│   │       ├── idolmessagevoicememo
 	│   │       ├── idolmessagephoto
 	│   │       ├── idolmessagevideo
 	│   │       └── idolmessagesticker
@@ -145,9 +145,7 @@ This message is a plain text message, which can include emojis, and as much text
 
 This basically just looks like a missed livestream/call, and has room for the livestream's title. 
 
-### 'totalmemo'
-
-<em>Firstly: sorry about skipping out on the naming convention for this one. I had it as idolmessagesmemo or something like that originally, but realized I needed another container and then... am too lazy to go back and fix it. </em>
+### 'idolmessagevoicememo'
 
 This is a voice note, with the play button, length tracker, expand button, and also editable text of the length (initially 00:00)
 
