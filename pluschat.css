@@ -1,0 +1,464 @@
+/* background color + text options:
+
+the background and text options are paired in the way they are on the app,
+so for the most accurate representation, use them together
+(but also do as you please)
+
+you can control f for [BACKGROUND-COLOR] and [MESSAGE-COLOR] respectively
+
+lilac-blue:
+background: #c9d0ea
+messages: #7984b1
+
+yellow:
+background: #f2de6f
+messages: #d5ac0a
+
+orange:
+background: #fca783
+messages: #e3703f
+
+green:
+background: #a0dda6
+messages: #5eab6f
+
+teal-blue:
+background: #a2bce3
+messages: #587ab1
+
+pink:
+background: #f7b3cf
+messages: #c96f93
+
+purple:
+background: #bfa2e3
+messages: #8067b5
+
+red-orange:
+background: #fb8686
+messages: #cb4f4f
+
+salmon:
+background: #eec2c2
+messages: #cb8181
+
+beige-yellow:
+background: #e2d1b0
+messages: #a69171
+
+to use an image as the background, 
+add these two lines into #workskin .pluschat 
+(where it says "replace [BACKGROUND-COLOR] although it's good to still set a background color in case the image doesn't work :D )
+(note that you might have to host your image online somewhere!
+i personally use https: //images.squidge.org but anything works):
+
+		background-image: url("imageurl.com");
+		background-size:100%;
+
+		/* and this one is optional: */
+/*
+		background-repeat: repeat-y; /* if background needs to repeat it will repeat along the y axis */
+
+/* UNIVERSAL ELEMENTS */
+
+#workskin .pluschat {
+	width: 100%;
+	/* note that everything is made for this size and generally uses px instead of % so if you change it you might have to play around a bit */
+	max-width: 400px;
+	/* generic font, can be changed */
+	font-family: "Helvetica Neue", Helvetica, system-ui;
+	margin: auto;
+	/* replace [BACKGROUND-COLOR] here: */
+	background-color: #c9d0ea;
+	/* adds tiny border to outside of screen, looks nice but can be removed */
+	border: 0.75px solid darkgrey;
+}
+
+#workskin .messagesscreen {
+	margin: auto;
+	padding: 15px;
+}
+
+/* datetime next to respective sender name */
+#workskin .datetime {
+	color: #282a30;
+	margin-left: 6px;
+	font-size: 80%;
+}
+
+
+/* HEADER ELEMENTS */
+
+/* overall header container */
+#workskin .header {
+	min-height: 40px;
+	padding-top: 30px;
+	margin: 0 20px;
+	display: flex;
+	justify-content: space-between;
+}
+
+/* exit out of chat arrow button */
+#workskin .backbutton {
+	width: 16px;
+	height: 16px;
+}
+
+/* translate button */
+#workskin .translatebutton {
+	width: 25px;
+	height: 25px;
+}
+
+#workskin .centered {
+	display: block;
+	text-align: center;
+}
+
+/* idol's name in header */
+#workskin .title {
+	font-size: 120%;
+	height: 100%;
+}
+
+#workskin .downarrow {
+	margin-left: 3px;
+	width: 10px;
+	height: 10px;
+}
+
+/* days together */
+#workskin .daystogether {
+	text-align: center;
+	color: #363636;
+	padding-top: -10px;
+	font-size: 70%;
+}
+
+/* current date container */
+#workskin .floatingday {
+	font-size: 90%;
+	color: #282a30;
+	display: flex;
+	justify-content: center;
+	margin-bottom: 8px;
+}
+
+/* current date */
+#workskin .date {
+	font-size: 80%;
+	border-radius: 20px;
+	padding: 6px 20px;
+	background: #ffffff76;
+	text-align: center;
+}
+
+/* IDOL ELEMENTS */
+
+/* verified symbol next to idol name */
+#workskin .verify {
+	width: 16px;
+	height: 16px;
+	margin-left: 3px;
+}
+
+/* grouping of messages including: text, stickers, images, videos, livestreams, and photos */
+#workskin .idolmessagesgroup {
+	display: inline-grid;
+}
+
+#workskin .incoming {
+	display: flex;
+}
+
+/* idol's profile photo */
+#workskin .profpicdiv {
+	border-radius: 100px;
+	width: 40px;
+	height: 40px;
+	flex-shrink: 0;
+}
+
+#workskin .profpic {
+	border-radius: 100px;
+	width: 40px;
+	height: 40px;
+}
+
+/* idols name */
+#workskin .idolname {
+	margin-left: 17px;
+	margin-bottom: 4px;
+	display: flex;
+	align-items: center;
+}
+
+/* internal organization of idol message bubble */
+#workskin .idolmessage {
+	max-width: 65%;
+	width: fit-content;
+	/* text is left aligned within message bubble, as is typical */
+	text-align: left;
+	margin-left: 15px;
+	margin-top: 6px;
+	/* shape + size of message bubble: */
+	border-radius: 20px;
+	padding: 10px 15px;
+	/* 100% font size = 16pt */
+	font-size: 100%;
+	/* line spacing of message: */
+	line-height: 1.5;
+	/* text is dark grey */
+	color: #282a30;
+	/* background is white */
+	background: #FFFFFF;
+}
+
+/* adds extra spacing after last message sent */
+#workskin .idolmessagesgroup:last-child {
+	margin-bottom: 14px;
+}
+
+/* IDOL ELEMENTS SUBSECTION: STICKERS */
+
+/* div for the sticker, makes the positioning nice (top and bottom spacing) */
+#workskin .idolmessagesticker {
+	padding-top: 4px;
+}
+
+/* sticker size (stickers should be png format/invisible background for most accurate rendition) */
+#workskin .sticker {
+	width: 128px;
+	height: 128px;
+}
+
+/* IDOL ELEMENTS SUBSECTION: PHOTOS */
+/* div for the photo, makes the positioning nice (top and bottom spacing) */
+#workskin .idolmessagephoto {
+	margin: 6px 0px 0px 16px;
+}
+
+/* photo size + curved corners */
+#workskin .photo {
+	width: 128px;
+	max-height: 230px;
+	border-radius: 20px;
+}
+
+/* IDOL ELEMENTS SUBSECTION: VIDEOS */
+/* div for the video, makes the positioning nice (top and bottom spacing) */
+#workskin .idolmessagevideo {
+	margin: 6px 0px 0px 16px;
+	position: relative;
+	display: inline-block;
+}
+
+/* video size + curved corners */
+#workskin .video {
+	width: 128px;
+	max-height: 230px;
+	border-radius: 20px;
+}
+
+/* adding time stamp to video */
+#workskin .videotimestamp {
+	padding: 5px 10px;
+	border-radius: 70px;
+	color: #FFFFFFFF;
+	background: #151515b3;
+	position: absolute;
+	margin: auto;
+	width: max-content;
+	font-size: 70%;
+	bottom: 0;
+	/* adjust the following to place your timestamp nicely, if necessary: */
+	margin-left: -65px;
+	margin-bottom: 8px;
+}
+
+/* IDOL ELEMENTS SUBSECTION: VOICE MEMOS */
+
+/* overall container for the voice memo so we can have two separate bubbles (one for memo, one for expand button) */
+#workskin .totalmemo {
+	display: flex;
+}
+
+/* bubble for the memo section */
+#workskin .idolmessagevoicememo {
+	display: flex;
+	align-items: center;
+	max-width: 65%;
+	margin-left: 15px;
+	margin-top: 6px;
+	/* shape + size of message bubble, squareish corners on the one side: */
+	border-radius: 20px 5px 5px 20px;
+	padding: 5px 15px 5px 10px;
+	/* background is white */
+	background: #FFFFFF;
+}
+
+/* play button */
+#workskin .memoplay {
+	width: 44px;
+	height: 44px;
+}
+
+/* voice memo length thingy */
+#workskin .memolength {
+	width: 84px;
+	height: 32px;
+}
+
+/* bubble for expansion box section */
+#workskin .memoexpbox {
+	display: flex;
+	align-items: center;
+	margin-left: 3px;
+	margin-top: 6px;
+	/* shape + size of message bubble, squareish corners on the one side: */
+	border-radius: 5px 20px 20px 5px;
+	padding: 5px 15px 5px 10px;
+	/* background is white */
+	background: #FFFFFF;
+}
+
+/* expansion arrows */
+#workskin .memoexpand {
+	width: 32px;
+	height: 32px;
+}
+
+/* IDOL ELEMENTS SUBSECTION: LIVE CALL */
+/* bubble for the live call */
+#workskin .idolmessagelive {
+	display: flex;
+	max-width: 65%;
+	width: fit-content;
+	margin-left: 15px;
+	margin-top: 6px;
+	/* shape + size of message bubble: */
+	border-radius: 20px;
+	padding: 5px 15px 5px 10px;
+	/* 100% font size = 16pt */
+	font-size: 100%;
+	/* line spacing of message: */
+	line-height: 1.5;
+	/* text is dark grey */
+	color: #282a30;
+	/* background is white */
+	background: #FFFFFF;
+}
+
+/* phone image */
+#workskin .live {
+	width: 64px;
+	height: 64px;
+}
+
+/* text container for the live call */
+#workskin .livetexts {
+	display: grid;
+	width: 150px;
+}
+
+/* "Live Ended" */
+#workskin .liveendtext {
+	font-size: 80%;
+	color: grey;
+	align-self: end;
+}
+
+/* for the live's title */
+#workskin .livetitle {
+	font-size: 90%;
+}
+
+/* END OF IDOL ELEMENTS */
+
+/* FAN ELEMENTS */
+
+/* fan grouping including: texts */
+#workskin .fan {
+	margin-top: 10px;
+	margin-right: 5px;
+	display: grid;
+	justify-content: right;
+}
+
+/* sender info ("Me" + datetime) */
+#workskin .sender {
+	margin-bottom: 4px;
+	margin-left: auto;
+}
+
+/* fan name (typically: "Me") */
+#workskin .mename {
+	font-size: 80%;
+	margin-right: -3px;
+	/* outline in a little transparent white bubble: */
+	border-radius: 20px;
+	padding: 3px 5px;
+	background: #ffffff76;
+}
+
+/* internal things for fan message bubble */
+#workskin .fanmessage {
+	max-width: 75%;
+	width: fit-content;
+	/* text is left aligned within message bubble, as is typical */
+	text-align: left;
+	margin-left: auto;
+	margin-top: 6px;
+	/* shape + size of message bubble: */
+	border-radius: 20px;
+	padding: 10px 15px;
+	/* 100% font size = 16pt */
+	font-size: 100%;
+	/* line spacing of message: */
+	line-height: 1.5;
+	/* leave message text as white: (or don't..) */
+	color: #FFFFFF;
+	/* replace [MESSAGE-COLOR] here: */
+	background: #7984b1;
+}
+
+/* adds space after final message in grouping */
+#workskin .fanmessage:last-child {
+	margin-bottom: 16px;
+}
+
+
+/* FOOTER ELEMENTS*/
+/* aka the dark "Send a message" section */
+
+/* background of footer */
+#workskin .footer {
+	background: #151515;
+	min-height: 70px;
+	padding-top: 10px;
+}
+
+/* gen didn't know what to call this... text input area? */
+#workskin .sendmessageoval {
+	width: 85%;
+	background: #232323;
+	border-radius: 30px;
+	padding: 5px 15px;
+	font-size: 115%;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	margin: 0 auto;
+	border: 2px solid #363636;
+}
+
+/* text inside input area (usually: "Send a message" */
+#workskin .messagesend {
+	color: #878787;
+}
+
+/* the add emoji smiley face button thing */
+#workskin .buttons {
+	width: 32px;
+	height: 32px;
+}
