@@ -155,9 +155,9 @@ This basically just looks like a missed livestream/call, and has room for the li
 
 ### 'idolmessagephoto'
 
-(Shocker) This is a photo. 
+This is a photo. (Shocker)
 
-### 'idolmessagephoto'
+### 'idolmessagevideo'
 
 This is also a photo, but with a little timestamp, so it looks like a video. 
 
