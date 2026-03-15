@@ -165,6 +165,24 @@ This is also a photo, but with a little timestamp, so it looks like a video.
 
 This is also a photo, but slightly smaller and the background should be transparent, and it should be square (or else it's getting smushed). 
 
+## Edit 03/14/26:
+
+So I recognized when I made this that it looked real fucking ugly with the Creator's Skin turned off, and looked around and couldn't find anything about it. Thanks to [this](https://archiveofourown.gay/works/45447364/) guide, I realized I can absolutely make it look alright! I am updating the css/html here and the docs on AO3 to reflect this. 
+
+### In order to have an element that you want <em>hidden</em> when work skin is <em><strong>on</strong></em>:
+
+Put it into a span with the class "hiddenwithskin" (figured the name was a bit self explanatory), which looks like this:
+`<span class="hiddenworkskin">itemhiddenwhenworkskinon</span>`
+
+This would be used for things that make the messaging system clear without all of the details added by the work skin. For example, in my work, I added `<span class="hiddenskin">[sticker]</span>` so that when the work skin was turned off, it showed this message, rather than the actual sticker image (which was taken out as it might have weird sizing/spacing without the ability to change it through css)
+
+### In order to have an element that you want <em>hidden</em> when work skin is <em><strong>off</strong></em>:
+
+Put it into a span with the class "hidden [otherclassname]" , which looks like this:
+`<img class="hidden backbutton" src="imageurl">`
+
+This would be used for things that are used in the the messaging system, but we DO NOT want to be shown when the messaging system is off, such as the images used for the idol's profile picture, the buttons, and all of that extraneous stuff. I have edited the template.html file so that the things that I personally took out in my own work were given the 'hidden' class, but you can add it to anything by adding 'hidden' to the class identifier, just made sure that if there are multiple classes (ie if there is an existing class, and you want to add hidden) there is a space between them: CORRECT: `<img class="hidden backbutton" src="imageurl">` NOT CORRECT: `<img class="hiddenbackbutton" src="imageurl">` or `<img class="hidden,backbutton" src="imageurl">` or whatever else!
+
 ## Closing
 
 I believe that is all of the info I have to give you, although I am available to contact on [twitter](https://x.com/neulbubble), and will even turn on public dms for a week or two in case you want to ask me about something (scary) (anything for you guys). You can also reach me by commenting on the AO3 work for this skin!
