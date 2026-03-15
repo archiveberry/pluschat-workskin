@@ -1,6 +1,7 @@
 # Archive of Our Own - Plus Chat Work Skin
 An AO3 Work Skin for idol messaging system Plus Chat (adaptable for other messaging systems) using CSS and HTML. Available [here](https://archiveofourown.org/works/80519981) on AO3.
 <br/>
+
 ## Previews
 
 <details>
@@ -15,6 +16,7 @@ An AO3 Work Skin for idol messaging system Plus Chat (adaptable for other messag
 </details>
 
 <br/>
+
 ## Rules of Usage
 
 This work skin is free to use for everybody, and free to take and adjust as you please—in fact I encourage you to do so!
@@ -27,6 +29,7 @@ If you use it OR work off of it to make something on your own, I ask that you pl
 Thank you for your kindness and understanding!
 
 <br/>
+
 ## How To Use (Basic)
 
 [See [AO3's How To Use Work Skins](https://archiveofourown.org/admin_posts/1370) article, and the 'Editing [files]' sections below if you need more information and assistance.]
@@ -46,6 +49,7 @@ Thank you for your kindness and understanding!
 1. Enjoy!
 
 <br/>
+
 ## Editing pluschat.css
 
 I tried to make this as user friendly as possible, even if a person was not well versed in coding or AO3 work skins, so there are lots of comments and lots of spacing to help everyone figure things out. 
@@ -57,6 +61,7 @@ To replace the background color, the easiest thing to do is: ctrl-f (or search) 
 There is not a ton that should be/can be changed with the CSS, but feel free to play around with it if you are unhappy with anything!
 
 <br/>
+
 ## Editing template.html
 
 This is the section that is the most essential to change and (potentially) the most confusing, so I tried my best to make it as clear as possible. 
@@ -135,6 +140,7 @@ Within 'idolmessagesgroup', you should have the 'idolname' section, where you'd 
 For the part after that, you have lots of options.
 
 <br/>
+
 ## Idol message options
 
 You can use as many of these as you would like within one 'incoming' block.
@@ -170,6 +176,7 @@ This is also a photo, but with a little timestamp, so it looks like a video.
 This is also a photo, but slightly smaller and the background should be transparent, and it should be square (or else it's getting smushed). 
 
 <br/>
+
 ## 'hidden' and 'hiddenwithskin' (added 03/14/26):
 
 So I recognized when I made this that it looked real fucking ugly with the Creator's Skin turned off, and looked around and couldn't find anything about it. Thanks to [this](https://archiveofourown.gay/works/45447364/) guide, I realized I can absolutely make it look alright! I am updating the css/html here and the docs on AO3 to reflect this. Note that these only impact the creator's style toggle—when downloading the fic, there will still unfortunately be issues with formatting :(
@@ -189,6 +196,7 @@ Put it into a span with the class "hidden [otherclassname]" , which looks like t
 This would be used for things that are used in the the messaging system, but we DO NOT want to be shown when the messaging system is off, such as the images used for the idol's profile picture, the buttons, and all of that extraneous stuff. I have edited the template.html file so that the things that I personally took out in my own work were given the 'hidden' class, but you can add it to anything by adding 'hidden' to the class identifier, just made sure that if there are multiple classes (ie if there is an existing class, and you want to add hidden) there is a space between them: CORRECT: `<img class="hidden backbutton" src="imageurl">` NOT CORRECT: `<img class="hiddenbackbutton" src="imageurl">` or `<img class="hidden,backbutton" src="imageurl">` or whatever else!
 
 <br/>
+
 ## Closing
 
 I believe that is all of the info I have to give you, although I am available to contact on [twitter](https://x.com/neulbubble), and will even turn on public dms for a week or two in case you want to ask me about something (scary) (anything for you guys). You can also reach me by commenting on the AO3 work for this skin!
