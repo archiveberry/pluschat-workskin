@@ -167,7 +167,7 @@ This is also a photo, but slightly smaller and the background should be transpar
 
 ## Edit 03/14/26:
 
-So I recognized when I made this that it looked real fucking ugly with the Creator's Skin turned off, and looked around and couldn't find anything about it. Thanks to [this](https://archiveofourown.gay/works/45447364/) guide, I realized I can absolutely make it look alright! I am updating the css/html here and the docs on AO3 to reflect this. 
+So I recognized when I made this that it looked real fucking ugly with the Creator's Skin turned off, and looked around and couldn't find anything about it. Thanks to [this](https://archiveofourown.gay/works/45447364/) guide, I realized I can absolutely make it look alright! I am updating the css/html here and the docs on AO3 to reflect this. Note that these only impact the creator's style toggle—when downloading the fic, there will still unfortunately be issues with formatting :(
 
 ### In order to have an element that you want <em>hidden</em> when work skin is <em><strong>on</strong></em>:
 
