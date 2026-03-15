@@ -61,6 +61,10 @@ i personally use https: //images.squidge.org but anything works):
 
 /* UNIVERSAL ELEMENTS */
 
+#workskin .userstuff .hidden {
+	display: initial;
+}
+
 #workskin .pluschat {
 	width: 100%;
 	/* note that everything is made for this size and generally uses px instead of % so if you change it you might have to play around a bit */
@@ -273,18 +277,18 @@ i personally use https: //images.squidge.org but anything works):
 	bottom: 0;
 	/* adjust the following to place your timestamp nicely, if necessary: */
 	margin-left: -65px;
-	margin-bottom: 11px;
+	margin-bottom: 8px;
 }
 
 /* IDOL ELEMENTS SUBSECTION: VOICE MEMOS */
 
 /* overall container for the voice memo so we can have two separate bubbles (one for memo, one for expand button) */
-#workskin .idolmessagevoicememo {
+#workskin .totalmemo {
 	display: flex;
 }
 
 /* bubble for the memo section */
-#workskin .totalmemo {
+#workskin .idolmessagevoicememo {
 	display: flex;
 	align-items: center;
 	max-width: 65%;
@@ -461,4 +465,8 @@ i personally use https: //images.squidge.org but anything works):
 #workskin .buttons {
 	width: 32px;
 	height: 32px;
+}
+
+.hiddenwithskin {
+	display: none !important;
 }
